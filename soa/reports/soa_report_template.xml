@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<odoo>
+    <data>
+            <report
+                id="customized_SOA"
+                string="customized_SOA"
+                model="account.move"
+                report_type="qweb-pdf"
+                name="customized_SOA.report_template"
+                file="customized_SOA.report_template"
+                attachment_use="True"
+                attachment="(object.name or 'Custom Report') + '.pdf'"
+            />
+
+        <template id="report_invoice">
+            <t t-call="custom_reports.report_template">
+                <!-- Your report template content here -->
+                <div>
+                    <h2>Custom Invoice Report</h2>
+                    <p>Invoice Number: <span t-field="object.name"/></p>
+                    <p>Amount Total: <span t-field="object.amount_total"/></p>
+                    <!-- Add more fields as needed -->
+                </div>
+            </t>
+        </template>
+    </data>
+</odoo>
