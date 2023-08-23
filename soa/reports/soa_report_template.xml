@@ -73,7 +73,7 @@
             </div>
         </template>
 
-        <template id="external_layout_SOA_2">
+        <template id="external_layout_SOA">
             <t t-if="not o" t-set="o" t-value="doc"/>
         
             <t t-if="not company">
@@ -93,8 +93,8 @@
         <t t-else="else" t-call="soa.custom_SOA"><t t-out="0"/></t>
     
     </template>
-
-        <template id="custom_SOA">
+<!--  -->
+        <template id="custom_SOA_2">
             <div t-attf-class="header o_company_#{company.id}_layout" t-att-style="report_header_style">
                 <div class="row">
                     <div class="col-3 mb4">
