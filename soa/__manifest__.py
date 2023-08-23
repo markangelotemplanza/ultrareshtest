@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "SOA",
+    'name': "soa",
 
     'summary': """
         Short (1 phrase/line) summary of the module's purpose, used as
@@ -25,7 +25,8 @@
     # always loaded
     'data': [
         'security/ir.model.access.csv',
-        'reports/report_template.xml',
+        'views/views.xml',
+        'reports/soa_report_template.xml',
     ],
     'installable': True,
 }
