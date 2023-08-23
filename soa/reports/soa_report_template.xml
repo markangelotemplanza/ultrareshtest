@@ -21,7 +21,6 @@
             </template>
 
 
-
 <template id="custom_SOA">
             <div t-attf-class="header o_company_#{company.id}_layout" t-att-style="report_header_style">
                 <div class="row">
