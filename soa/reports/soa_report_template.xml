@@ -1,26 +1,6 @@
 <?xml version="1.0"?>
 <odoo>
     <data>
-        <!-- Define a new report using <record> -->
-        <record id="report_custom_invoice" model="ir.actions.report">
-            <field name="name">Custom Invoice Report</field>
-            <field name="model">account.move</field>
-            <field name="report_type">qweb-pdf</field>
-            <field name="report_name">soa.report_template</field>
-            <field name="report_file">soa.report_template</field>
-
-        </record>
-
-        <!-- Define the content template for the report -->
-            <template id="report_template">
-                <t t-call="web.html_container">
-        <t t-foreach="docs" t-as="o">
-                
-                </t>
-        </t>
-            </template>
-
-
 <template id="custom_SOA">
       <div t-attf-class="header o_company_#{company.id}_layout" t-att-style="report_header_style">
           <div class="row">
