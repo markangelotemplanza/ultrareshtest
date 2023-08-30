@@ -6,7 +6,7 @@
           <div class="row">
               <div class="col-3 mb4">
                 <img t-att-src="'/web/image/12997-9ac5eb51/SOA_logo.png'" style="max-height: 45px;" alt="Logo"/>
-
+                       <function model="soa.soa" name="format_amount" eval="('test')"/>
               </div>
               <div class="col-9 text-end" style="margin-top:22px;" t-field="company.report_header" name="moto"/>
           </div>
